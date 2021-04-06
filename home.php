@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Recyclapedia Home</title>
 	<link rel = "stylesheet" href="css/styles.css">
-
+    <?php include 'home_info.php';?>
   </head>
   <body>
       <div class="row"> <!-- parent row. contains sidebar + rest of page -->
@@ -58,82 +58,81 @@
 
 <!-- This section is for the animated images-->
 
-        <div class="wrap row">
-	    <div class="tile">
-	        <img src='images/cardboard.jpg'/>
-	        <div class="text">
-		    <h1>Lorem ipsum.</h1>
-		    <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-		    <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-		    <div class="dots">
-		        <span></span>
-		        <span></span>
-		        <span></span>
-		    </div>
-	        </div>
-            </div>
+            <div class="wrap">
+                <div class="tile">
+                    <img src='images/cardboard.jpg'/>
+                    <div class="text">
+                        <h1><?=$cardboardTitle?></h1>
+                        <h2 class="animate-text"><?=$cbRecyclable?></h2>
+                        <p class="animate-text"> <?=$cbSpecifics?> </p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
 
 
-            <div class="tile">
-                <img src='images/Glass.png'/>
-                <div class="text">
-                    <h1>Lorem ipsum.</h1>
-                    <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                    <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-                    <div class="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="tile">
+                    <img src='images/Glass.png'/>
+                    <div class="text">
+                        <h1><?=$glassTitle?></h1>
+                        <h2 class="animate-text"><?=$glRecyclable?></h2>
+                        <p class="animate-text"> <?=$glSpecifics?> </p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile">
+                    <img src='images/Aluminium-packaging-2015.jpg'/>
+                    <div class="text">
+                        <h1><?=$aluminumTitle?></h1>
+                        <h2 class="animate-text"><?=$alRecyclable?></h2>
+                        <p class="animate-text"> <?=$alSpecifics?> </p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tile">
+                    <img src='images/metals.jpg'/>
+                    <div class="text">
+                        <h1><?=$metalTitle?></h1>
+                        <h2 class="animate-text"><?=$mRecyclable?></h2>
+                        <p class="animate-text"><?=$mSpecifics?></p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile">
+                    <img src='images/PET-bottles2.jpg'/>
+                    <div class="text">
+                        <h1><?=$plasticTitle?></h1>
+                        <h2 class="animate-text"><?=$pRecyclable?></h2>
+                        <p class="animate-text"> <?=$pSpecifics?> </p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="tile">
-                <img src='images/Aluminium-packaging-2015.jpg'/>
-                <div class="text">
-                    <h1>Lorem ipsum.</h1>
-                    <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                    <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-                    <div class="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="tile">
-                <img src='images/metals.jpg'/>
-                <div class="text">
-                    <h1>Lorem ipsum.</h1>
-                    <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                    <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-                    <div class="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tile">
-                  <img src='images/PET-bottles2.jpg'/>
-                  <div class="text">
-                      <h1>Lorem ipsum.</h1>
-                      <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                      <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-                      <div class="dots">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-        </div> <!-- close div for entire page minus sidebar -->
+          </div>
+       </div> <!-- close div for entire page minus sidebar -->
     </div> <!-- parent row close div. contains sidebar + rest of page -->
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
